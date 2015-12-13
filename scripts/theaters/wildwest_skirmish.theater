@@ -1,0 +1,66 @@
+"#base" "wildwest.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				"#Fireteam_Alpha"
+				{
+					"[LEADER] Cowboy"		"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+				}
+				
+				"#Fireteam_Bravo"
+				{
+					"[LEADER] Cowboy"		"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"squads"
+			{
+				"#Cell_Alpha"
+				{
+					"[LEADER] Crook"		"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+				}
+				"#Cell_Bravo"
+				{
+					"[LEADER] Crook"		"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+				}
+			}
+		}
+	}
+}

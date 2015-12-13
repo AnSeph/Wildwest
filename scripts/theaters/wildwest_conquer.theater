@@ -1,0 +1,113 @@
+"#base" "wildwest_coop_shared.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"squads"
+			{
+				"The Posse"
+				{
+					"[LEADER] Cowboy"		"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"squads"
+			{
+				// Gunslinger		Revolver
+				// Smoker			Smokes/Rifle
+				// Flamer			Molotov/Shotgun
+				// Rifler			Rifle
+				
+				// "Smoker"			"coop_crook_smoker"
+				// "Gunslinger"		"coop_crook_gunslinger"
+				// "Flamer"			"coop_crook_flamer"
+				// "Rifler"			"coop_crook_rifler"
+				
+				"#Cell_Alpha"	// assault team #1
+				{
+					"Rifler"			"coop_crook_rifler"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Flamer"			"coop_crook_flamer"
+					"Smoker"			"coop_crook_smoker"
+					"Rifler"			"coop_crook_rifler"
+					"Rifler"			"coop_crook_rifler"
+				}
+				
+				"#Cell_Bravo"	// assault team #2
+				{
+					"Rifler"			"coop_crook_rifler"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Flamer"			"coop_crook_flamer"
+					"Smoker"			"coop_crook_smoker"
+					"Rifler"			"coop_crook_rifler"
+					"Rifler"			"coop_crook_rifler"
+				}
+				
+				"#Cell_Charlie"	// support team
+				{
+					"Rifler"			"coop_crook_rifler"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Flamer"			"coop_crook_flamer"
+					"Smoker"			"coop_crook_smoker"
+					"Rifler"			"coop_crook_rifler"
+					"Rifler"			"coop_crook_rifler"
+				}
+				
+				"#Cell_Delta"	// heavy weapons team
+				{
+					"Rifler"			"coop_crook_rifler"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Flamer"			"coop_crook_flamer"
+					"Smoker"			"coop_crook_smoker"
+					"Rifler"			"coop_crook_rifler"
+					"Rifler"			"coop_crook_rifler"
+				}
+				
+				"#Cell_Echo"
+				{
+					"Rifler"			"coop_crook_rifler"
+					"Smoker"			"coop_crook_smoker"
+					"Smoker"			"coop_crook_smoker"
+					"Smoker"			"coop_crook_smoker"
+					"Flamer"			"coop_crook_flamer"
+					"Flamer"			"coop_crook_flamer"
+					"Rifler"			"coop_crook_rifler"
+					"Rifler"			"coop_crook_rifler"
+				}
+				
+				"#Cell_Foxtrot"
+				{
+					"Smoker"			"coop_crook_smoker"
+					"Flamer"			"coop_crook_flamer"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Flamer"			"coop_crook_flamer"
+					"Flamer"			"coop_crook_flamer"
+					"Gunslinger"		"coop_crook_gunslinger"
+					"Gunslinger"		"coop_crook_gunslinger"
+				}
+			}
+		}
+	}
+}

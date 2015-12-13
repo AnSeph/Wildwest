@@ -1,0 +1,129 @@
+"#base" "wildwest.theater"
+
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+			"?push_security_attack"
+			{
+				"squads"
+			{
+				"#Fireteam_Alpha"
+				{
+					"[LEADER] Cowboy"		"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+				}
+				
+				"#Fireteam_Bravo"
+				{
+					"[LEADER] Cowboy"		"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+				}
+			}
+			
+			"?push_security_defend"
+			{
+				"squads"
+			{
+				"#Fireteam_Alpha"
+				{
+					"[LEADER] Cowboy"		"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+				}
+				
+				"#Fireteam_Bravo"
+				{
+					"[LEADER] Cowboy"		"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+					"Cowboy"				"template_cowboy"
+				}
+			}
+		}
+		
+		"insurgents"
+		{
+			"?push_insurgents_attack"
+			{
+				"squads"
+			{
+				"#Cell_Alpha"
+				{
+					"[LEADER] Crook"		"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+				}
+				"#Cell_Bravo"
+				{
+					"[LEADER] Crook"		"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+				}
+			}
+			}
+			
+			"?push_insurgents_defend"
+			{
+				"squads"
+			{
+				"#Cell_Alpha"
+				{
+					"[LEADER] Crook"		"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+				}
+				"#Cell_Bravo"
+				{
+					"[LEADER] Crook"		"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+					"Crook"				"template_crook"
+				}
+			}
+			}
+		}
+	}
+}

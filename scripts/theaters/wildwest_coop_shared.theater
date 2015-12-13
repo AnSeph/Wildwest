@@ -1,0 +1,152 @@
+"#base" "wildwest.theater"
+
+"theater"
+{
+	"core"
+	{
+		// custom precache stuff
+		// "precache"
+		// {
+		// "sounds"        "scripts/custom_sounds.txt"
+		// "particles"        "particles/custom_particles.pcf"
+		// "responses"        "scripts/talker/custom_response_rules.txt"
+		// "localize"        "resource/custom_%language%.txt"
+		// }
+
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/ins_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/ins_sounds_radial_security.txt"				
+			"sounds"			"scripts/ins_sounds_radial_insurgent.txt"			
+			"sounds"			"scripts/ins_sounds_responses_security.txt"
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/wildwest_sounds.txt"
+			
+			"localize"			"resource/wildwest_english.txt"
+			
+			// coop specific
+			"sounds"			"scripts/ins_sounds_voice_coop.txt"
+		}
+		
+		// use this to register any acts not registered by the game DLL
+		// "activities"
+		// {
+		// "act"                "ACT_VM_SOMETHING"
+		// }
+	}
+	
+	
+	"player_templates"
+	{
+		
+		// 
+		// BEGIN PLACEHOLDER BOT CLASS TEMPLATES
+		//
+		
+		"coop_crook_gunslinger"
+		{
+			"team"						"security,insurgents"
+			"print_name"				"#Squad_Cell_Specialist"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"ins_chest_rig"
+				"weapon"				"weapon_model10"
+			}
+			"allowed_items"
+			{	
+				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_model10"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"coop_crook_rifler"
+		{
+			"team"					"security,insurgents"
+			"print_name"				"#Squad_Cell_Fighter"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"gear"					"ins_chest_rig"
+				"weapon"				"weapon_winchester"
+			}
+			"allowed_items"
+			{	
+				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"coop_crook_flamer"
+		{
+			"team"						"security,insurgents"
+			"print_name"				"#Squad_Cell_MachineGunner"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_fighter.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_molotov"
+			}
+			"allowed_items"
+			{	
+				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"coop_crook_smoker"
+		{
+			"team"						"security,insurgents"
+			"print_name"				"#Squad_Cell_Sharpshooter"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_light.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model10"
+				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_m18"
+			}
+			"allowed_items"
+			{	
+				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		
+		// 
+		// END PLACEHOLDER BOT CLASS TEMPLATES
+		// 
+	}
+}

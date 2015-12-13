@@ -1,0 +1,241 @@
+// --------------------------
+// WILHEIM SCREAMS
+// --------------------------
+
+"Player.Death"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.4"
+	"pitch"			"100,103"
+	"soundlevel"  	"SNDLVL_80db"
+	"rndwave"
+	{
+		"wave"		"player/damage/wilheim_death_01.wav"
+		"wave"		"player/damage/wilheim_death_02.wav"		
+		"wave"		"player/damage/wilheim_death_03.wav"
+		"wave"		"player/damage/wilheim_death_04.wav"				
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap" 
+			
+			"Swap_trigger"
+			{
+			"input2" "20"
+			}
+			
+			"voice_play_entry"
+			{
+				"entry_name" "Player.Death3pWilheim"
+			}
+			
+
+        }
+	}
+}
+
+"Player.Death3p"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.75"
+	"pitch"			"100,103"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"player/damage/wilheim_death_01.wav"
+		"wave"		"player/damage/wilheim_death_02.wav"		
+		"wave"		"player/damage/wilheim_death_03.wav"
+		"wave"		"player/damage/wilheim_death_04.wav"
+	}
+	
+		"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "INS_DistantVoiceSwap2" 
+			
+			"Swap_trigger2"
+			{
+			"input2" "500"
+			}
+			
+			"voice_play_entry2"
+			{
+				"entry_name" "Player.DeathDistant"
+			}
+			
+
+        }
+	}
+}
+
+// --------------------------
+// WINCHESTER CARBINE 
+// --------------------------
+
+"Weapon_1873.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_94dB "
+	"rndwave"
+	{
+		"wave"	        "weapons/1873/1873_tp.wav"	
+	}	
+	"soundentry_version" 	"2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{		
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_M45.SingleDistant"
+			}
+		}		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			"volume_accumulate"
+			{
+				"input3" "0.7"
+			}
+
+		}
+	}
+}
+"Weapon_1873.SingleLocal"
+{
+	"channel"	    "CHAN_WEAPON"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"		    "weapons/1873/1873_fp.wav"	
+}
+
+// WINCHESTER HANDLING
+
+
+"Weapon_1873.BoltRelease"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/1873/handling/1873_boltrelease.wav" 
+}
+
+"Weapon_1873.BoltLatch"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/1873/handling/1873_boltlatch.wav" 
+}
+
+"Weapon_1873.Boltback"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/1873/handling/1873_boltback.wav" 
+}
+
+"Weapon_1873.Boltforward"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"wave"				"weapons/1873/handling/1873_boltforward.wav" 
+}
+
+"Weapon_1873.Roundin"
+{
+	"channel"			"CHAN_ITEM"
+	"volume"		    "0.2"
+	"pitch"			    "PITCH_NORM"
+	"soundlevel"  		"SNDLVL_65dB"
+	"rndwave"
+	{
+	"wave"	   "weapons/1873/handling/m40a1_bulletin_1.wav" 
+	"wave"	   "weapons/1873/handling/m40a1_bulletin_2.wav" 
+	"wave"	   "weapons/1873/handling/m40a1_bulletin_3.wav" 
+	"wave"	   "weapons/1873/handling/m40a1_bulletin_4.wav" 
+	}
+}
+
+// --------------------------
+// COACH GUN
+// --------------------------
+
+"weapon_coachgun.Single"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+	"soundlevel"  	"SNDLVL_94dB "
+	"rndwave"
+	{
+		"wave"	        "weapons/coachgun/coach_tp.wav"	
+	}	
+	"soundentry_version" 	"2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{		
+			"import_stack" "INS_distance_weapon_start"
+			"import_stack" "INS_limit_start3"			
+			"play_distant_version_1"
+			{
+				"entry_name" "Weapon_TOZ.SingleDistant"
+			}
+		}		
+		"update_stack"
+		{
+			"import_stack" "INS_update_weapon"
+			"mixer"
+			{
+				"mixgroup" "ThirdWeapons"
+			}
+			"volume_distance_xfade"
+			{
+				"input_map_min" "0.0"
+				"input_map_max" "1.0"
+			}
+			"volume_accumulate"
+			{
+				"input3" "0.7"
+			}
+
+		}
+	}
+}
+"Weapon_coachgun.SingleLocal"
+{
+	"channel"	    "CHAN_WEAPON"
+	"volume"	    "1.0"
+    "pitch"			"100,105"
+    "soundlevel"	"SNDLVL_GUNFIRE"
+	"wave"		     "weapons/coachgun/coach_fp.wav"	
+}

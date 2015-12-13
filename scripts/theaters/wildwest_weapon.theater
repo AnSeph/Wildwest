@@ -1,0 +1,774 @@
+"#base" "base_weapon.theater"
+"#base" "wildwest_common_ammo.theater"
+"#base" "base_explosives.theater"
+
+"theater"
+{
+	"weapons"
+	{
+		// ========================================
+		// BOMBS AND OTHER STUFF
+		// ========================================
+		"weapon_c4_clicker"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"other_explosive"
+			"weapon_type"				"grenade"
+			"print_name"				"#weapon_dynamite"
+			"print_desc"				"#weapon_dynamite_desc"
+			"single_use"				"1"
+			"view_model"				"models/weapons/v_c4_sec.mdl"
+			"world_model"				"models/weapons/w_c4.mdl"
+			"weapon_slot"				"explosive"
+			"weapon_max_subslot"		"0"	// can only be in the first explosive slot
+			"act_table"					"grenade"
+			"weapon_weight"				"100"
+			"weapon_cost"				"4"
+			"class_restricted"			"1"
+			
+			"explosives"
+			{
+				"entity"					"grenade_dynamite"
+				"GrenadeRollSpeed"			"400"
+				"GrenadeRollSpeedProne"		"350"
+				"GrenadeRollUpSpeed"		"350"
+				"GrenadeRollUpSpeedProne"	"300"
+				"GrenadeThrowSpeed"			"850"
+				"GrenadeThrowSpeedProne"	"600"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"					"grenade_c4"
+				"clip_max_rounds"			"-1"	// no clips
+				"clip_default"				"1"
+			}
+			"team_access"				"security, insurgent"
+		}
+		
+		"weapon_molotov"
+		{
+			"import"				"weapon_grenade_base"
+			"weapon_class"				"grenade_incendiary"
+			"weapon_type"				"grenade"
+			"print_name"				"#weapon_molotov"
+			"print_desc"				"#weapon_molotov_desc"
+			"view_model"				"models/weapons/v_molotov.mdl"
+			"world_model"				"models/weapons/w_molotov.mdl"
+			"weapon_slot"				"explosive"
+			"act_table"				"grenade"
+			"weapon_weight"				"20"
+			"weapon_cost"				"3"
+			"class_restricted"			"1"
+			
+			"fov"
+			{
+				"fov_wpn_default"			"65"
+			}
+			
+			"explosives"
+			{
+				"entity"				"grenade_molotov"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"grenade_molotov"
+				"clip_max_rounds"			"-1"	// no clips
+				"clip_default"				"1"
+			}
+			"team_access"				"security, insurgent"
+		}
+		"weapon_m18"
+		{
+			"import"				"weapon_grenade_base"
+			"weapon_class"				"grenade_smoke"
+			"weapon_type"				"grenade"
+			"print_name"				"#weapon_m18"
+			"print_desc"				"#weapon_m18_desc"
+			"view_model"				"models/weapons/v_m18.mdl"
+			"world_model"				"models/weapons/w_m18.mdl"
+			"weapon_slot"				"explosive"
+			"act_table"					"grenade"
+			"weapon_weight"				"12"
+			"weapon_cost"				"2"
+			"class_restricted"			"1"
+			
+			"fov"
+			{
+				"fov_wpn_default"			"65"
+			}
+			
+			"explosives"
+			{
+				"entity"				"grenade_m18"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"grenade_m18"
+				"clip_max_rounds"			"-1"	// no clips
+				"clip_default"				"1"
+			}
+
+			"sounds"
+			{
+				"special1"				"Weapon_M67.SpoonEject"
+			}
+
+			"team_access"				"security, insurgent"
+		}
+		
+		// ========================================
+		// MELEE
+		// ========================================
+		"weapon_kabar"
+		{
+			"import"				"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_kabar"
+			"view_model"				"models/weapons/v_marinebayonet.mdl"
+			"world_model"				"models/weapons/w_marinebayonet.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"knife"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"ammo_clip"
+			{
+				"ammo_type"					"invalid"
+				"clip_max_rounds"			"-1"	// no clips
+				"clip_default"				"0"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_Knife.Single"
+				"melee_hit"					"Weapon_Knife.Melee_Hit"
+				"melee_hit_world"			"Weapon_Knife.Melee_HitWorld"
+			}
+			"melee"
+			{
+				"MeleeRange"					"75"
+				"MeleeDamage"					"60"
+				"MeleeDamageBehindBonus"		"200"
+				"MeleeDamageType"				"DMG_SLASH"
+				"MeleeWeaponIdleTime"			"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"					"ACT_VM_HITCENTER"
+						"PlayerAtivity"				"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"		"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"					"0.1"
+						"EndTime"					"0.34"
+						"Duration"					"0.9"
+						"StartDirection"			"E"
+						"EndDirection"				"W"
+						"ForceDirection"			"15 -40 0"
+					}
+				}
+			}
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}
+			"recoil"
+			{
+				"recoil_rest_rate"			"5"
+				"recoil_rest_delay"			"0.1"
+			}
+			"team_access"				"security, insurgent"
+		}
+		"weapon_gurkha"
+		{
+			"import"					"weapon_base"
+			"weapon_class"				"melee"
+			"weapon_type"				"melee"
+			"print_name"				"#weapon_gurkha"
+			"view_model"				"models/weapons/v_gurkha.mdl"
+			"world_model"				"models/weapons/w_gurkha.mdl"
+			"weapon_slot"				"melee"
+			"act_table"					"knife"
+			"weapon_weight"				"1"
+			"weapon_cost"				"0"
+			"class_restricted"			"0"
+			"barrel_length"				"-1"
+			
+			"ammo_clip"
+			{
+				"ammo_type"					"invalid"
+				"clip_max_rounds"			"-1"	// no clips
+				"clip_default"				"0"
+			}
+			
+			"sounds"
+			{
+				"shot_single"				"Weapon_Knife.Single"
+				"melee_hit"					"Weapon_Knife.Melee_Hit"
+				"melee_hit_world"			"Weapon_Knife.Melee_HitWorld"
+			}
+			"melee"
+			{
+				"MeleeRange"					"75"
+				"MeleeDamage"					"60"
+				"MeleeDamageBehindBonus"		"200"
+				"MeleeDamageType"				"DMG_SLASH"
+				"MeleeWeaponIdleTime"			"2"
+				"SwingAttacks"
+				{
+					"slash1"
+					{
+						"Activity"					"ACT_VM_HITCENTER"
+						"PlayerAtivity"				"ACT_SHOOT_E2W_BAT"
+						"PlayerActivityIdle"		"ACT_SHOOT_E2W_IDLE_BAT"
+						"StartTime"					"0.1"
+						"EndTime"					"0.34"
+						"Duration"					"0.9"
+						"StartDirection"			"E"
+						"EndDirection"				"W"
+						"ForceDirection"			"15 -40 0"
+					}
+				}
+			}
+			"player_restrictions"
+			{
+				"allow_lean"				"1"
+				"allow_sprint"				"1"
+				"allow_jump"				"1"
+				"allow_sway"				"1"
+			}
+			"recoil"
+			{
+				"recoil_rest_rate"			"5"
+				"recoil_rest_delay"			"0.1"
+			}
+			"team_access"				"security, insurgent"
+		}
+		
+		// ========================================
+		// REVOLVERS
+		// ========================================
+		
+		"weapon_model10"
+		{
+			"import"					"pistol_base"
+			"weapon_class"				"pistol"
+			"print_name"				"#weapon_model10"
+			"print_desc"				"#weapon_model10_desc"
+			"view_model"				"models/weapons/v_38rev.mdl"
+			"world_model"				"models/weapons/w_38rev.mdl"
+			"rounds_per_minute"			"380"
+			"weapon_slot"				"secondary"
+			"act_table"					"pistol"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"45"
+			"weapon_cost"				"1"
+			"class_restricted"			"0"
+			"barrel_length"				"16"
+			"closed_bolt"				"0"
+			"trigger_delay"				"0.04"
+
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-10"
+				"fov_wpn_default"			"70"
+				"fov_wpn_ironsight"			"74"
+				"fov_wpn_focus"				"79"
+			}
+			"viewmodel_offsets"
+			{
+				// x back, y left, z down
+				"VMOffsetStand"				"0.15 0.25 0.75"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_revolver.Single"
+				"shot_single_local"			"Weapon_revolver.SingleLocal"
+				"empty"						"Weapon_revolver.Empty"
+				"magin"						"Weapon_revolver.RoundInsertSpeedLoader"
+				"magout"					"Weapon_revolver.DumpRounds"
+				"open_chamber"				"Weapon_revolver.OpenChamber"
+				"close_chamber"				"Weapon_revolver.CloseChamber"
+				"hammer"					"Weapon_revolver.CockHammer"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_m9_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_m9_3rd"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-0.8 1.0"
+				"recoil_vertical_range"			"1.2 2.8"
+				"recoil_aim_punch"				"2.8 3.2"
+				"recoil_rest_rate"				"4"
+				"recoil_rest_delay"				"0.18"
+				"recoil_roll_range"				"-0.6 -0.6"
+				"recoil_roll_rest_rate"			"180"
+				"recoil_shot_reset_time"		"1.45"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_punch_additive_factor"		"0.8"	// How much of the view punch from the previous shot(s) get added to any additional shot fired (default 1.0)
+			}
+			"ballistics"
+			{
+				"spread"				"0.5 0.5 0.5"
+				"FireModes"				"semi"
+				"bulletcount"			"1"
+				"maxrange"				"6000"
+				"singleReload"			"1"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"				"38special"
+				"clip_max"				"6"
+				"clip_max_rounds"		"6"
+				"clip_default"			"18"
+				"lose_rounds_reload"	"1"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"pistol"
+			}
+			"kitui_offset"
+			{
+				"position"				"12 -3 0"
+			}
+			"team_access"				"security, insurgent"
+		}
+		
+		// ========================================
+		// SHOTGUNS
+		// ========================================
+		
+		"weapon_toz"
+		{
+			"import"					"ballistic_base"
+			"weapon_class"				"shotgun"
+			"weapon_cost"				"3"
+			"rounds_per_minute"			"200"
+			"print_name"				"#weapon_coach"
+			"print_desc"				"#weapon_coach_desc"
+			"view_model"				"models/weapons/v_toz.mdl"
+			"world_model"				"models/weapons/w_toz.mdl"
+			"weapon_slot"				"primary"
+			"act_table"					"shot"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"160"	// (3.2kg[weapon] + (0.3kg[ammo] * (1+10)[mags]) )*10[kg->hg for int]  +24[encumbrance]
+			"barrel_length"				"18"
+			"class_restricted"			"0"
+			"reload_speed"				"1.15"
+			
+			"fov"
+			{
+				"fov_wpn_scope"				"0"
+				"fov_plr_ironsight"			"-25"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"52"
+				"fov_wpn_ironsight"			"64"
+				"fov_wpn_focus"				"69"
+			}
+			
+			"sounds"
+			{
+				"shot_single"				"weapon_coachgun.Single"
+				"shot_single_local"			"Weapon_coachgun.SingleLocal"
+				"shot_silent"				"Weapon_TOZ.SingleSilenced"
+				"shot_silent_local"			"Weapon_TOZ.SingleSilencedLocal"
+				"empty"						"Weapon_TOZ.Empty"
+				"boltback"					"Weapon_M590.BoltBack"
+				"boltrelease"				"Weapon_M590.BoltRelease"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_toz_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_toz_3rd"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-1.0 1.25"
+				"recoil_vertical_range"			"9.75 10.5"
+				"recoil_aim_punch"			"0.8 0.9"
+				"recoil_rest_rate"			"24"
+				"recoil_rest_delay"			"0.15"
+				"recoil_roll_range"			"-1.50 -1.50"
+				"recoil_roll_rest_rate"			"150"
+				"recoil_freeaim_frac"			"0.1"
+				
+				"recoil_additional_rest_per_shot"	"2.5"	// Amount of rest per additional shot (added to rest rate) (default = 2.5)
+				"recoil_shot_reset_time"		"0.3"	// Time delay for resetting the shots fired counter for the above (default = 0.3)
+				"recoil_shot_max_shots"			"5"	// Max number of shots to account for for the additional rest (default = 5)
+				"recoil_punch_additive_factor"		"0.85"	// How much of the view punch from the previous shot(s) get added to any additional shot fired.
+			}
+			"ballistics"
+			{
+				"spread"				"2.00 2.00 0.0"
+				"FireModes"				"semi"
+				"maxrange"				"5000"
+				"singleReload"			"1"
+				"tacticalreload"		"1"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"					"buckshot"
+				"clip_max"					"48"
+				"clip_max_rounds"			"1"
+				"clip_default"				"18"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary"
+			}
+			"kitui_offset"
+			{
+				"position"				"20 -2 2"
+			}
+			"team_access"				"security, insurgent"
+		}
+		"weapon_win1887"
+		{
+			"import"					"ballistic_base"
+			"weapon_class"				"shotgun"
+			"weapon_cost"				"5"
+			"print_name"				"#weapon_winchester1887"
+			"print_desc"				"#weapon_winchester1887_desc"
+			"view_model"				"models/weapons/v_toz.mdl"
+			"world_model"				"models/weapons/w_toz.mdl"
+			"fire_cycle"				"0.1"
+			"weapon_slot"				"primary"
+			"act_table"					"shot"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"320"	// (4.0kg[weapon] + (0.2kg[ammo] * (1+16)[mags]) )*10[kg->hg for int]  +32[encumbrance]
+			"barrel_length"				"38"
+			"bolt_speed"				"0.90"
+			"class_restricted"			"0"
+			
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"56"
+				"fov_wpn_ironsight"			"60"
+				"fov_wpn_focus"				"58"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_coachgun.Single"
+				"shot_single_local"			"Weapon_coachgun.SingleLocal"
+				"shot_silent"				"Weapon_TOZ.SingleSilenced"
+				"shot_silent_local"			"Weapon_TOZ.SingleSilencedLocal"
+				"empty"						"Weapon_TOZ.Empty"
+				"clipin"					"Weapon_TOZ.Clipin"
+				"clipout"					"Weapon_TOZ.Clipout"
+				"boltback"					"Weapon_TOZ.Boltback"
+				"boltforward"				"Weapon_TOZ.Boltforward"
+				"hit"						"Weapon_TOZ.Hit"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_toz_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_toz_3rd"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-2.2 3.4"
+				"recoil_vertical_range"			"5.5 6.4"
+				"recoil_aim_punch"			"0.8 0.95"
+				"recoil_rest_rate"			"12"
+				"recoil_rest_delay"			"0.05"
+				"recoil_roll_range"			"-5 -5"
+				"recoil_roll_rest_rate"			"70"
+			}
+			"ballistics"
+			{
+				"spread"				"1.75 1.75 1.75"
+				"FireModes"				"pump"
+				"maxrange"				"20000"
+				"singleReload"			"1"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"					"buckshot"
+				"clip_max"					"60"
+				"clip_max_rounds"			"5"
+				"clip_default"				"15"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary2"
+			}
+			"kitui_offset"
+			{
+				"position"				"20 -2 2"
+			}
+			"team_access"				"security, insurgent"
+		}
+		
+		// ========================================
+		// REPEATER RIFLES
+		// ========================================
+		
+		"weapon_win1873"
+		{
+			"import"					"ballistic_base"
+			"weapon_class"				"shotgun"
+			"weapon_cost"				"5"
+			"rounds_per_minute"			"380"
+			"print_name"				"#weapon_winchester"
+			"print_desc"				"#weapon_winchester_desc"
+			"view_model"				"models/weapons/v_m590.mdl"
+			"world_model"				"models/weapons/w_m590.mdl"
+			"weapon_slot"				"primary"
+			"act_table"					"bolt"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"320"	// (6.6kg[weapon] + (0.2kg[ammo] * (1+16)[mags]) )*10[kg->hg for int]  +32[encumbrance]
+			"barrel_length"				"38"
+			"bolt_speed"				"1.50"
+			"class_restricted"			"0"
+			
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"60"
+				"fov_wpn_ironsight"			"56"
+				"fov_wpn_focus"				"58"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_1873.Single"
+				"shot_single_local"			"Weapon_1873.SingleLocal"
+				"shot_silent"				"Weapon_M590.SingleSilenced"
+				"shot_silent_local"			"Weapon_M590.SingleSilencedLocal"
+				"empty"						"Weapon_M590.Empty"
+				"clipin"					"Weapon_M590.Clipin"
+				"clipout"					"Weapon_M590.Clipout"
+				"boltback"					"Weapon_1873.Boltback"
+				"boltforward"				"Weapon_1873.Boltforward"
+				"hit"						"Weapon_M590.Hit"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_toz_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_toz_3rd"
+				"particle_tracer"				"weapon_tracers"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-2.2 3.4"
+				"recoil_vertical_range"			"5.5 6.4"
+				"recoil_aim_punch"				"0.8 0.95"
+				"recoil_rest_rate"				"12"
+				"recoil_rest_delay"				"0.05"
+				"recoil_roll_range"				"-5 -5"
+				"recoil_roll_rest_rate"			"70"
+			}
+			"ballistics"
+			{
+				"spread"					"0.15 0.15 0.15"
+				"FireModes"					"pump"
+				"maxrange"					"40000"
+				"singleReload"				"1"
+				"tacticalreload"			"1"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"					"38-40Win"
+				"clip_max"					"60"
+				"clip_max_rounds"			"15"
+				"clip_default"				"15"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary2"
+			}
+			"kitui_offset"
+			{
+				"position"				"33 -2 3"
+			}
+			"team_access"				"security, insurgent"
+		}
+		"weapon_win1895"
+		{
+			"import"					"ballistic_base"
+			"weapon_class"				"sniper_rifle"
+			"weapon_cost"				"4"
+			"rounds_per_minute"			"380"
+			"print_name"				"#weapon_winchester1895"
+			"print_desc"				"#weapon_winchester1895_desc"
+			"view_model"				"models/weapons/v_mosin.mdl"
+			"world_model"				"models/weapons/w_mosin.mdl"
+			"weapon_slot"				"primary"
+			"act_table"					"bolt"
+			"weapon_abilities"			"ironsight"
+			"weapon_weight"				"200"	// (6.6kg[weapon] + (0.2kg[ammo] * (1+16)[mags]) )*10[kg->hg for int]  +32[encumbrance]
+			"barrel_length"				"38"
+			"bolt_speed"				"1.50"
+			"class_restricted"			"0"
+			
+			"fov"
+			{
+				"fov_plr_ironsight"			"-10"
+				"fov_plr_focus"				"-12"
+				"fov_wpn_default"			"60"
+				"fov_wpn_ironsight"			"56"
+				"fov_wpn_focus"				"58"
+			}
+			"sounds"
+			{
+				"shot_single"				"Weapon_MOSIN.Single"
+				"shot_single_local"			"Weapon_MOSIN.SingleLocal"
+				"shot_silent"				"Weapon_MOSIN.SingleSilenced"
+				"shot_silent_local"			"Weapon_MOSIN.SingleSilencedLocal"
+				"empty"						"Weapon_MOSIN.Empty"
+				"clipin"					"Weapon_MOSIN.Clipin"
+				"clipout"					"Weapon_MOSIN.Clipout"
+				"boltback"					"Weapon_MOSIN.Boltback"
+				"boltforward"				"Weapon_MOSIN.Boltforward"
+				"hit"						"Weapon_MOSIN.Hit"
+			}
+			"particles"
+			{
+				"particle_muzzleflash_1st"		"muzzleflash_sks_1p"
+				"particle_muzzleflash_3rd"		"muzzleflash_sks_3rd"
+				"particle_tracer"				"weapon_tracers"
+			}
+			"recoil"
+			{
+				"recoil_lateral_range"			"-2.2 3.4"
+				"recoil_vertical_range"			"5.5 6.4"
+				"recoil_aim_punch"				"0.8 1.2"
+				"recoil_rest_rate"				"12"
+				"recoil_rest_delay"				"0.05"
+				"recoil_roll_range"				"-5 -5"
+				"recoil_roll_rest_rate"			"70"
+			}
+			"ballistics"
+			{
+				"spread"					"0.15 0.15 0.15"
+				"FireModes"					"bolt"
+				"maxrange"					"40000"
+				"singleReload"				"1"
+				"tacticalreload"			"1"
+			}
+			"ammo_clip"
+			{
+				"ammo_type"					"30Army"
+				"clip_max"					"60"
+				"clip_max_rounds"			"5"
+				"clip_default"				"15"
+			}
+			"attachments"
+			{
+				"attachment_addon"			"primary2"
+			}
+			"kitui_offset"
+			{
+				"position"				"33 -2 3"
+			}
+			"team_access"				"security, insurgent"
+		}
+	}
+	
+	"explosives"
+	{
+		"grenade_dynamite"
+		{
+			"import"				"baseGrenade"
+			"entity_class"			"grenade_frag"
+			"Model"					"models/weapons/w_c4.mdl"
+			
+			"DetonateDamage"				"200"
+			"DetonateDamageRadius"			"500"
+			"DetonatePenetrationRadius"		"200"
+			"FuseTime"						"6"
+			
+			"Health"					"50"
+			"ReactExplosions"			"1"
+			"ReactBullets"				"0"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"ins_c4_explosion"
+				"DetonateWaterParticle"			"ins_water_explosion"
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"C4.Explode"
+				"DetonateWaterSound"		"C4.ExplodeWater"
+				"BounceSound"				"Weapon_C4.Bounce"
+			}
+		}
+		"grenade_m18"
+		{
+			"import"				"baseGrenade"
+			"entity_class"			"grenade_smoke"
+			"Model"					"models/weapons/w_m18.mdl"
+			"FuseTime"				"3.5"
+			"RocketStartSpeed"			"2500"
+			
+			"Particles"
+			{
+				"DetonateParticle"			"smokegrenade"
+				"SmokeColor"				"40 35 33 252"	// why does the alpha have to be set so damn high?
+			}
+			
+			"Sounds"
+			{
+				"DetonateSound"				"BaseSmokeEffect.Sound"
+				"BounceSound"				"Weapon_M18.Bounce"
+			}
+		}
+		"grenade_molotov"
+		{
+			"import"						"baseGrenade"
+			"entity_class"					"grenade_aoe"
+			"Model"							"models/weapons/w_molotov.mdl"
+			"DamageType"					"DMG_BURN, DMG_PREVENT_PHYSICS_FORCE"
+			"DetonateDamage"				"100"	// det damage is for when it first goes off
+			"DetonatePenetrationRadius"		"0"
+			"DetonateDamageRadius"			"240"
+			"FuseTime"						"0"
+			"Cookable"						"0"
+			"DetonateUnderwater"			"0"
+			"ImpactDetonation"				"1"
+			"RocketStartSpeed"				"2000"
+			"ShakeAmplitude"				"0"
+			"UseVPhysics"					"0"
+			
+			"Elasticity"					"0.0"
+			
+			"Deafen"						"0"
+			"AreaDamageTime"				"24"
+			"AreaDamageFrequency"			"0.44"
+			"AreaDamageMinRadius"			"240"
+			"AreaDamageMaxRadius"			"260"
+			"AreaDamageGrowSpeed"			"9"
+			"AreaDamageAmount"				"18"
+			
+			"Health"						"50"
+			"ReactExplosions"				"1"
+			"ReactBullets"					"1"
+			
+			"Particles"
+			{
+				"DetonateParticle"				"ins_molotov_explosion"
+				"DetonateWaterParticle"			"ins_molotov_explosion"
+				"TrailParticle"					"molotov_trail"
+				"BroadcastAll"					"1"
+				"FollowOrigin"					"1"
+				"NormalUp"						"1"
+			}
+			"Sounds"
+			{
+				"DetonateSound"				"Molotov.Burn"
+				"BounceSound"				"Weapon_M67.Bounce"
+				"ExtinguishSound"			"Molotov.Extinguish"
+			}
+		}
+	}
+}

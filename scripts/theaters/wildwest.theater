@@ -1,0 +1,197 @@
+"#base" "base_player.theater"
+"#base" "wildwest_gear.theater"
+"#base" "wildwest_weapon.theater"
+"#base"	"wildwest_upgrades.theater"
+
+"theater"
+{
+	"core"
+	{
+		// custom precache stuff
+		// "precache"
+		// {
+		// "sounds"        "scripts/custom_sounds.txt"
+		// "particles"        "particles/custom_particles.pcf"
+		// "responses"        "scripts/talker/custom_response_rules.txt"
+		// "localize"        "resource/custom_%language%.txt"
+		// }
+
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/ins_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/ins_sounds_radial_security.txt"				
+			"sounds"			"scripts/ins_sounds_radial_insurgent.txt"			
+			"sounds"			"scripts/ins_sounds_responses_security.txt"
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/ins_sounds_hq.txt"
+			"sounds"			"scripts/wildwest_sounds.txt"
+			
+			"localize"			"resource/wildwest_english.txt"
+		}
+		
+		// use this to register any acts not registered by the game DLL
+		// "activities"
+		// {
+		// "act"                "ACT_VM_SOMETHING"
+		// }
+	}
+	
+	"teams"
+	{
+		"security"
+		{
+			"name"					"#Team_Cowboys"
+			"logo"					"gameui/fac_sec"
+		}
+		
+		"insurgents"
+		{
+			"name"					"#Team_Crooks"
+			"logo"					"gameui/fac_ins"
+		}
+	}
+	
+	"player_templates"
+	{
+		
+		"template_cowboy"
+		{
+			"team"						"security"
+			"print_name"				"Cowboy"
+			
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model10"
+			}
+			"allowed_items"
+			{	
+				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		
+		"template_crook"
+		{
+			"team"						"insurgents"
+			"print_name"				"Crook"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			}
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_model10"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		
+		
+		// special templates used by gamemodes
+		"template_vip_security"
+		{
+			"print_name"				"#VIP_RoleName"
+			
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_security.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_vip.mdl"
+				
+				"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/us_cap_vip.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model10"
+			}
+		}
+		
+		"template_vip_security_elimination"
+		{
+			"print_name"				"#VIP_RoleName"
+			
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_security.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_vip.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_model10"
+			}
+		}
+		
+		"template_vip_insurgent"
+		{
+			"print_name"				"#VIP_RoleName"
+			
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_insurgent.mdl"
+				"viewmodel_hands"			"models/weapons/v_hands_vip.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_model10"
+			}
+		}
+		
+		"template_vip_insurgent_elimination"
+		{
+			"print_name"				"#VIP_RoleName"
+			
+			"models"
+			{
+				"player"				"models/characters/civilian_vip_insurgent.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_vip.mdl"
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_gurkha"
+				"weapon"				"weapon_model10"
+			}
+		}
+	}
+}

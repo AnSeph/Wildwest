@@ -1,0 +1,258 @@
+"theater"
+{
+	"ammo"
+	{
+		// don't use this
+		"default"	// set for AKM values as baseline
+		{
+			"flags"					"AMMO_USE_MAGAZINES"
+			"carry"					"12"
+			"magsize"				"30"
+			"tracer_type"				"none"
+			
+			"SuppressionIncrement"			"60"
+			"PhysicsImpulse"
+			{
+				"50"					"800"
+				"2000"					"200"
+			}
+			"PenetrationDamage"
+			{
+				"0"					"1"
+				"100"					"0.5"
+				"200"					"0.1"
+			}
+			"Damage"
+			{
+				"10"					"100"
+				"8000"					"60"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"1.00"
+				"HITGROUP_STOMACH"			"1.00"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
+		
+		"no_carry"	// dummy ammo type for weapons that have no backup ammo (at4)
+		{
+			"carry"					"0"
+		}
+		
+		// ========================================
+		// ROCKETS
+		// ========================================
+		"rocket_rpg7"
+		{
+			"carry"					"1"
+		}
+		
+		// ========================================
+		// GRENADES
+		// ========================================
+		"grenade_m67"
+		{
+			"carry"					"3"
+		}
+		"grenade_f1"
+		{
+			"carry"					"3"
+		}
+		"grenade_m18"
+		{
+			"carry"					"3"
+		}
+		"grenade_m84"
+		{
+			"carry"					"3"
+		}
+		"grenade_c4"
+		{
+			"carry"					"1"
+		}
+		"grenade_m203_he"
+		{
+			"carry"					"3"
+		}
+		"grenade_gp25_he"
+		{
+			"carry"					"3"
+		}
+		"grenade_m203_smoke"
+		{
+			"carry"					"3"
+		}
+		"grenade_gp25_smoke"
+		{
+			"carry"					"3"
+		}
+		"grenade_anm14"
+		{
+			"carry"					"3"
+		}
+		"grenade_molotov"
+		{
+			"carry"					"3"
+		}
+		"grenade_flares"
+		{
+			"carry"					"2"
+		}
+		
+		// ========================================
+		// Bullets
+		// ========================================
+		"38special" // 158gr 290m/s 420J
+		{
+			"import"				"default"
+			"flags_clear"			"AMMO_USE_MAGAZINES"
+			"SuppressionIncrement"	"15"
+			"magsize"				"6"
+			"carry"					"48"
+
+			"Damage"
+			{
+				"1"						"70"
+				"100"					"60"
+				"5000"					"25"
+			}
+			"PenetrationPower"
+			{
+				"10"					"125"
+				"8000"					"75"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"1.00"
+				"HITGROUP_STOMACH"			"1.00"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"0.90"
+				"HITGROUP_RIGHTLEG"			"0.90"
+			}
+		}
+		
+		"38-40Winchester"	// 180gr 350m/s  729J
+		{
+			"import"					"default"
+			"SuppressionIncrement"		"30"
+			"brass_model"				"models/weapons/shells/45apc.mdl"
+			"magsize"					"25"
+			"Damage"
+			{
+				"10"					"95"
+				"100"					"90"
+				"5000"					"35"
+			}
+			"PenetrationPower"
+			{
+				"10"					"450"
+				"8000"					"65"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"1.25"
+				"HITGROUP_STOMACH"			"1.25"
+				"HITGROUP_LEFTARM"			"1.25"
+				"HITGROUP_RIGHTARM"			"1.25"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
+		
+		"30-40Krag"		// 200gr 602m/s  2347J
+		{
+			"import"					"default"
+			"SuppressionIncrement"		"30"
+			"brass_model"				"models/weapons/shells/545x39.mdl"
+			"magsize"					"25"
+			"Damage"
+			{
+				"10"					"115"
+				"12000"					"85"
+			}
+			"PenetrationPower"
+			{
+				"10"					"550"
+				"8000"					"100"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"1.50"
+				"HITGROUP_STOMACH"			"1.00"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"0.95"
+				"HITGROUP_RIGHTLEG"			"0.95"
+			}
+		}
+		
+		"00buck"
+		{
+			"import"					"default"
+			"bulletcount"				"12"
+			"damageType"				"DMG_BUCKSHOT"
+			"brass_model"				"models/weapons/shells/12guage.mdl"
+			"brass_sound"				"BOUNCE_SHOTSHELL"
+			"Damage"
+			{
+				"800"					"27" // 324 total possible
+				"2000"					"14" // 162 (rounded up)
+				"7000"					"4" // 54 (rounded down)
+			}
+			"PenetrationPower"
+			{
+				"1000"					"100"
+				"8000"					"10"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.60"
+				"HITGROUP_STOMACH"			"0.60"
+				"HITGROUP_LEFTARM"			"1.00"
+				"HITGROUP_RIGHTARM"			"1.00"
+				"HITGROUP_LEFTLEG"			"1.00"
+				"HITGROUP_RIGHTLEG"			"1.00"
+			}
+		}
+		// ========================================
+		// Rifles
+		// ========================================
+		"38-40Win"
+		{
+			"import"					"38-40Winchester"
+			"carry"						"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		"30Army"
+		{
+			"import"					"30-40Krag"
+			"carry"						"120"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+		
+		// ========================================
+		// Shotguns
+		// ========================================
+		"buckshot"
+		{
+			"import"					"00buck"
+			"carry"						"72"
+			"flags_clear"				"AMMO_USE_MAGAZINES"
+		}
+	}
+}

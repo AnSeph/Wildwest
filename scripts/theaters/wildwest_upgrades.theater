@@ -1,0 +1,39 @@
+"#base" "base_weapon_upgrades.theater"
+
+"theater"
+{
+	"weapon_upgrades"
+	{
+		"magazine_speedloader"
+		{
+			"upgrade_slot"				"magazine"
+			"upgrade_cost"				"2"
+			"team_access"				"security, insurgent"
+
+			"print_name"				"#weapon_upgrade_speedloader"
+			"print_desc"				"#weapon_upgrade_speedloader_desc"
+
+			// some magic to disable single reload
+			"weapon_abilities"			"speedreload"
+
+			"allowed_weapons"
+			{
+				"weapon"				"weapon_model10"
+			}
+
+			"viewmodel_attachments"
+			{
+				"speedloader_38"
+				{
+					"ActSuffix"			"_SPEED"
+					"model"				"models/weapons/upgrades/a_speedloader_rev.mdl"
+
+					"weapons"
+					{
+						"weapon"		"weapon_model10"
+					}
+				}
+			}
+		}
+	}
+}
