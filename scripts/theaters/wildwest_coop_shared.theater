@@ -61,10 +61,11 @@
 				"weapon"				"weapon_kabar"
 				"gear"					"ins_chest_rig"
 				"weapon"				"weapon_model10"
+				"weapon"				"weapon_win1873"
 			}
 			"allowed_items"
 			{	
-				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_win1873"
 				"weapon"				"weapon_model10"
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_molotov"
@@ -85,11 +86,11 @@
 			{
 				"weapon"				"weapon_kabar"
 				"gear"					"ins_chest_rig"
-				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_win1895"
 			}
 			"allowed_items"
 			{	
-				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_win1895"
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_molotov"
 				"weapon"				"weapon_m18"
@@ -113,7 +114,7 @@
 			}
 			"allowed_items"
 			{	
-				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_win1873"
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_molotov"
 				"weapon"				"weapon_m18"
@@ -133,12 +134,12 @@
 			{
 				"weapon"				"weapon_kabar"
 				"weapon"				"weapon_model10"
-				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_win1887"
 				"weapon"				"weapon_m18"
 			}
 			"allowed_items"
 			{	
-				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_win1887"
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_molotov"
 				"weapon"				"weapon_m18"
