@@ -10,14 +10,14 @@
 			{
 				"The Posse"
 				{
-					"[LEADER] Cowboy"		"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
+					"[LEADER] Lawman"		"template_lawmen_lawman"
+					"#class_lawman"			"template_lawmen_lawman"
+					"#class_gunslinger"		"template_lawmen_gunslinger"
+					"#class_stagecoach"		"template_lawmen_stagecoach"
+					"#class_stagecoach"		"template_lawmen_stagecoach"
+					"#class_gunslinger"		"template_lawmen_gunslinger"
+					"#class_gunslinger"		"template_lawmen_gunslinger"
+					"#class_sapper"			"template_lawmen_sapper"
 				}
 			}
 		}

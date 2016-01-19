@@ -19,6 +19,7 @@
 			"allowed_weapons"
 			{
 				"weapon"				"weapon_model10"
+				"weapon"				"weapon_model1875"
 			}
 
 			"viewmodel_attachments"
@@ -31,6 +32,7 @@
 					"weapons"
 					{
 						"weapon"		"weapon_model10"
+						"weapon"		"weapon_model1875"
 					}
 				}
 			}

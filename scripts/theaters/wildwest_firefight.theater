@@ -8,28 +8,31 @@
 		{
 			"squads"
 			{
-				"#Fireteam_Alpha"
+				// assault squad
+				"#Fireteam_Alpha"	// small arms
 				{
-					"[LEADER] Cowboy"		"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
+					"[LEADER] Lawman"				"template_lawmen_lawman"
+					"#class_lawman"					"template_lawmen_lawman"
+					"#class_gunslinger"				"template_lawmen_gunslinger"
+					"#class_gunslinger"				"template_lawmen_gunslinger"
+					"#class_stagecoach"				"template_lawmen_stagecoach"
+					"#class_stagecoach"				"template_lawmen_stagecoach"
+					"#class_sapper"					"template_lawmen_sapper"
+					"#class_sapper"					"template_lawmen_sapper"
 				}
 				
+				// recon team
 				"#Fireteam_Bravo"
 				{
-					"[LEADER] Cowboy"		"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
-					"Cowboy"				"template_cowboy"
+					"[LEADER] Lawman"				"template_lawmen_lawman"
+					"#class_lawman"					"template_lawmen_lawman"
+					"#class_gunslinger"				"template_lawmen_gunslinger"
+					"#class_gunslinger"				"template_lawmen_gunslinger"
+					"#class_stagecoach"				"template_lawmen_stagecoach"
+					"#class_stagecoach"				"template_lawmen_stagecoach"
+					"#class_sapper"					"template_lawmen_sapper"
+					"#class_sapper"					"template_lawmen_sapper"
+				}
 			}
 		}
 		
@@ -37,27 +40,30 @@
 		{
 			"squads"
 			{
+				// assault group
 				"#Cell_Alpha"
 				{
-					"[LEADER] Crook"		"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
+					"[LEADER] Outlaw"				"template_outlaws_outlaw"
+					"#class_outlaw"					"template_outlaws_outlaw"
+					"#class_gunslinger"				"template_outlaws_gunslinger"
+					"#class_gunslinger"				"template_outlaws_gunslinger"
+					"#class_stagecoach"				"template_outlaws_stagecoach"
+					"#class_stagecoach"				"template_outlaws_stagecoach"
+					"#class_sapper"					"template_outlaws_sapper"
+					"#class_sapper"					"template_outlaws_sapper"
 				}
+				
+				// scout cell
 				"#Cell_Bravo"
 				{
-					"[LEADER] Crook"		"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
-					"Crook"				"template_crook"
+					"[LEADER] Outlaw"				"template_outlaws_outlaw"
+					"#class_outlaw"					"template_outlaws_outlaw"
+					"#class_gunslinger"				"template_outlaws_gunslinger"
+					"#class_gunslinger"				"template_outlaws_gunslinger"
+					"#class_stagecoach"				"template_outlaws_stagecoach"
+					"#class_stagecoach"				"template_outlaws_stagecoach"
+					"#class_sapper"					"template_outlaws_sapper"
+					"#class_sapper"					"template_outlaws_sapper"
 				}
 			}
 		}

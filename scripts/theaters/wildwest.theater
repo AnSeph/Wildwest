@@ -43,24 +43,125 @@
 	{
 		"security"
 		{
-			"name"					"#Team_Cowboys"
+			"name"					"#Team_Lawmen"
 			"logo"					"gameui/fac_sec"
 		}
 		
 		"insurgents"
 		{
-			"name"					"#Team_Crooks"
+			"name"					"#Team_Outlaws"
 			"logo"					"gameui/fac_ins"
 		}
 	}
 	
 	"player_templates"
 	{
-		
-		"template_cowboy"
+		"template_lawmen_gunslinger"
 		{
 			"team"						"security"
-			"print_name"				"Cowboy"
+			"print_name"				"#class_gunslinger"
+			
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model1875"
+				"weapon"				"weapon_win1873"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_win1873"
+				"weapon"				"weapon_win1895"
+				"weapon"				"weapon_model1875"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_lawmen_sapper"
+		{
+			"team"						"security"
+			"print_name"				"#class_sapper"
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model10"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_anm14"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_win1887"
+				"weapon"				"weapon_model1875"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_anm14"
+				"weapon'				"weapon_molotov
+			}
+		}
+		"template_lawmen_stagecoach"
+		{
+			"team"						"security"
+			"print_name"				"#class_stagecoach"
+			"models"
+			{
+				"player"				"models/characters/security_specialist.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_sec_l.mdl"
+				
+				"attachments"
+				{
+					"helmet"
+					{
+						"model"			"models/characters/us_helmet_head.mdl"
+					}
+				}
+			}
+			
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model10"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_win1887"
+				"weapon"				"weapon_model1875"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_lawmen_lawman"
+		{
+			"team"						"security"
+			"print_name"				"#class_lawman"
 			
 			"models"
 			{
@@ -82,18 +183,23 @@
 				"weapon"				"weapon_model10"
 			}
 			"allowed_items"
-			{	
-				"weapon"				"weapon_winchester"
+			{
+				"weapon"				"weapon_win1875"
+				"weapon"				"weapon_win1873"
+				"weapon"				"weapon_win1895"
+				"weapon"				"weapon_win1887"
+				"weapon"				"weapon_m1911"
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_molotov"
 				"weapon"				"weapon_m18"
+				"weapon"				"weapon_anm14"
 			}
 		}
 		
-		"template_crook"
+		"template_outlaws_outlaw"
 		{
 			"team"						"insurgents"
-			"print_name"				"Crook"
+			"print_name"				"#class_outlaw"
 			
 			"models"
 			{
@@ -107,10 +213,92 @@
 			}
 			"allowed_items"
 			{
-				"weapon"				"weapon_winchester"
+				"weapon"				"weapon_win1875"
+				"weapon"				"weapon_win1873"
+				"weapon"				"weapon_win1895"
+				"weapon"				"weapon_win1887"
+				"weapon"				"weapon_m1911"
 				"weapon"				"weapon_toz"
 				"weapon"				"weapon_molotov"
 				"weapon"				"weapon_m18"
+				"weapon"				"weapon_anm14"
+			}
+		}
+		"template_outlaws_stagecoach"
+		{
+			"team"						"insurgents"
+			"print_name"				"#class_stagecoach"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			}
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model10"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_win1887"
+				"weapon"				"weapon_model1875"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_outlaws_gunslinger"
+		{
+			"team"						"insurgents"
+			"print_name"				"#class_gunslinger"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			}
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model1875"
+				"weapon"				"weapon_win1873"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_win1873"
+				"weapon"				"weapon_win1895"
+				"weapon"				"weapon_model1875"
+				"weapon"				"weapon_m1911"
+				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_m18"
+			}
+		}
+		"template_outlaws_sapper"
+		{
+			"team"						"insurgents"
+			"print_name"				"#class_sapper"
+			
+			"models"
+			{
+				"player"				"models/characters/insurgent_standard.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_ins_l.mdl"
+			}
+			"buy_order"
+			{
+				"weapon"				"weapon_kabar"
+				"weapon"				"weapon_model10"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_anm14"
+			}
+			"allowed_items"
+			{
+				"weapon"				"weapon_win1887"
+				"weapon"				"weapon_model1875"
+				"weapon"				"weapon_toz"
+				"weapon"				"weapon_m18"
+				"weapon"				"weapon_anm14"
+				"weapon'				"weapon_molotov
 			}
 		}
 		
@@ -123,7 +311,7 @@
 			"models"
 			{
 				"player"				"models/characters/civilian_vip_security.mdl"
-				"viewmodel_hands"			"models/weapons/v_hands_vip.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_vip.mdl"
 				
 				"attachments"
 				{
@@ -138,7 +326,7 @@
 			{
 				"weapon"				"weapon_kabar"
 				"weapon"				"weapon_kabar"
-				"weapon"				"weapon_model10"
+				"weapon"				"weapon_m1911"
 			}
 		}
 		
@@ -155,7 +343,7 @@
 			"buy_order"
 			{
 				"weapon"				"weapon_gurkha"
-				"weapon"				"weapon_model10"
+				"weapon"				"weapon_m1911"
 			}
 		}
 		
@@ -166,14 +354,14 @@
 			"models"
 			{
 				"player"				"models/characters/civilian_vip_insurgent.mdl"
-				"viewmodel_hands"			"models/weapons/v_hands_vip.mdl"
+				"viewmodel_hands"		"models/weapons/v_hands_vip.mdl"
 			}
 			
 			"buy_order"
 			{
 				"weapon"				"weapon_gurkha"
 				"weapon"				"weapon_gurkha"
-				"weapon"				"weapon_model10"
+				"weapon"				"weapon_m1911"
 			}
 		}
 		
@@ -190,7 +378,7 @@
 			"buy_order"
 			{
 				"weapon"				"weapon_gurkha"
-				"weapon"				"weapon_model10"
+				"weapon"				"weapon_m1911"
 			}
 		}
 	}

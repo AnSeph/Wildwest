@@ -6,10 +6,11 @@
 	{
 		"security"
 		{
-			"?push_security_attack"
+			"?strike_security_attack"
 			{
 				"squads"
 				{
+					// assault squad
 					"#Fireteam_Alpha"	// small arms
 					{
 						"[LEADER] Lawman"				"template_lawmen_lawman"
@@ -22,6 +23,7 @@
 						"#class_sapper"					"template_lawmen_sapper"
 					}
 					
+					// recon team
 					"#Fireteam_Bravo"
 					{
 						"[LEADER] Lawman"				"template_lawmen_lawman"
@@ -36,11 +38,12 @@
 				}
 			}
 			
-			"?push_security_defend"
+			"?strike_security_defend"
 			{
 				"squads"
 				{
-					"#Fireteam_Alpha"
+					// assault squad
+					"#Fireteam_Alpha"	// small arms
 					{
 						"[LEADER] Lawman"				"template_lawmen_lawman"
 						"#class_lawman"					"template_lawmen_lawman"
@@ -52,6 +55,7 @@
 						"#class_sapper"					"template_lawmen_sapper"
 					}
 					
+					// recon team
 					"#Fireteam_Bravo"
 					{
 						"[LEADER] Lawman"				"template_lawmen_lawman"
@@ -69,10 +73,11 @@
 		
 		"insurgents"
 		{
-			"?push_insurgents_attack"
+			"?strike_insurgents_attack"
 			{
 				"squads"
 				{
+					// assault group
 					"#Cell_Alpha"
 					{
 						"[LEADER] Outlaw"				"template_outlaws_outlaw"
@@ -85,6 +90,7 @@
 						"#class_sapper"					"template_outlaws_sapper"
 					}
 					
+					// scout cell
 					"#Cell_Bravo"
 					{
 						"[LEADER] Outlaw"				"template_outlaws_outlaw"
@@ -99,10 +105,11 @@
 				}
 			}
 			
-			"?push_insurgents_defend"
+			"?strike_insurgents_defend"
 			{
 				"squads"
 				{
+					// assault group
 					"#Cell_Alpha"
 					{
 						"[LEADER] Outlaw"				"template_outlaws_outlaw"
@@ -115,6 +122,7 @@
 						"#class_sapper"					"template_outlaws_sapper"
 					}
 					
+					// scout cell
 					"#Cell_Bravo"
 					{
 						"[LEADER] Outlaw"				"template_outlaws_outlaw"

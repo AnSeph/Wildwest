@@ -110,13 +110,13 @@
 			{
 				"weapon"				"weapon_kabar"
 				"weapon"				"weapon_toz"
-				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_anm14"
 			}
 			"allowed_items"
 			{	
 				"weapon"				"weapon_win1873"
 				"weapon"				"weapon_toz"
-				"weapon"				"weapon_molotov"
+				"weapon"				"weapon_anm14"
 				"weapon"				"weapon_m18"
 			}
 		}

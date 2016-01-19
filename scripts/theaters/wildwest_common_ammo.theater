@@ -143,7 +143,65 @@
 			}
 		}
 		
-		"38-40Winchester"	// 180gr 350m/s  729J
+		"45acp"	// 230gr 250m/s  477J
+		{
+			"import"					"default"
+			"SuppressionIncrement"			"30"
+			"magsize"					"7"
+			"brass_model"				"models/weapons/shells/45apc.mdl"
+			"Damage"
+			{
+				"10"					"76"
+				"8000"					"32"
+			}
+			"PenetrationPower"
+			{
+				"10"					"200"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"0.50"
+				"HITGROUP_STOMACH"			"0.50"
+				"HITGROUP_LEFTARM"			"1.50"
+				"HITGROUP_RIGHTARM"			"1.50"
+				"HITGROUP_LEFTLEG"			"1.50"
+				"HITGROUP_RIGHTLEG"			"1.50"
+			}
+		}
+		
+		"44Rem"
+		{
+			"import"						"default"
+			"flags_clear"					"AMMO_USE_MAGAZINES"
+			"SuppressionIncrement"			"30"
+			"magsize"						"6"
+			"carry"							"48"
+			"SuppressionIncrement"			"30"
+			"Damage"
+			{
+				"10"					"85"
+				"8000"					"35"
+			}
+			"PenetrationPower"
+			{
+				"10"					"240"
+				"8000"					"135"
+			}
+			"DamageHitgroups"
+			{
+				"HITGROUP_HEAD"				"1.00"
+				"HITGROUP_CHEST"			"1.25"
+				"HITGROUP_STOMACH"			"1.25"
+				"HITGROUP_LEFTARM"			"1.50"
+				"HITGROUP_RIGHTARM"			"1.50"
+				"HITGROUP_LEFTLEG"			"1.50"
+				"HITGROUP_RIGHTLEG"			"1.50"
+			}
+		}
+		
+		"40Winchester"	// 217gr 360m/s  925J
 		{
 			"import"					"default"
 			"SuppressionIncrement"		"30"
@@ -165,22 +223,22 @@
 				"HITGROUP_HEAD"				"1.00"
 				"HITGROUP_CHEST"			"1.25"
 				"HITGROUP_STOMACH"			"1.25"
-				"HITGROUP_LEFTARM"			"1.25"
-				"HITGROUP_RIGHTARM"			"1.25"
-				"HITGROUP_LEFTLEG"			"1.00"
-				"HITGROUP_RIGHTLEG"			"1.00"
+				"HITGROUP_LEFTARM"			"1.50"
+				"HITGROUP_RIGHTARM"			"1.50"
+				"HITGROUP_LEFTLEG"			"1.25"
+				"HITGROUP_RIGHTLEG"			"1.25"
 			}
 		}
 		
 		"30-40Krag"		// 200gr 602m/s  2347J
 		{
 			"import"					"default"
-			"SuppressionIncrement"		"30"
+			"SuppressionIncrement"		"60"
 			"brass_model"				"models/weapons/shells/545x39.mdl"
-			"magsize"					"25"
+			"magsize"					"5"
 			"Damage"
 			{
-				"10"					"115"
+				"10"					"120"
 				"12000"					"85"
 			}
 			"PenetrationPower"
@@ -192,7 +250,7 @@
 			{
 				"HITGROUP_HEAD"				"1.00"
 				"HITGROUP_CHEST"			"1.50"
-				"HITGROUP_STOMACH"			"1.00"
+				"HITGROUP_STOMACH"			"1.50"
 				"HITGROUP_LEFTARM"			"1.00"
 				"HITGROUP_RIGHTARM"			"1.00"
 				"HITGROUP_LEFTLEG"			"0.95"
@@ -221,8 +279,8 @@
 			"DamageHitgroups"
 			{
 				"HITGROUP_HEAD"				"1.00"
-				"HITGROUP_CHEST"			"0.60"
-				"HITGROUP_STOMACH"			"0.60"
+				"HITGROUP_CHEST"			"0.75"
+				"HITGROUP_STOMACH"			"0.75"
 				"HITGROUP_LEFTARM"			"1.00"
 				"HITGROUP_RIGHTARM"			"1.00"
 				"HITGROUP_LEFTLEG"			"1.00"
@@ -232,9 +290,9 @@
 		// ========================================
 		// Rifles
 		// ========================================
-		"38-40Win"
+		"40Win"
 		{
-			"import"					"38-40Winchester"
+			"import"					"40Winchester"
 			"carry"						"120"
 			"flags_clear"				"AMMO_USE_MAGAZINES"
 		}
